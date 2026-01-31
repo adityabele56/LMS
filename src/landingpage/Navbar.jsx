@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import Footer from './Footer';
 
 const Navbar = () => {
@@ -33,14 +33,17 @@ const Navbar = () => {
         {/* Navigation Links - Desktop */}
         <div className="hidden md:flex items-center space-x-12">
           {navLinks.map((link) => (
+            <NavLink to={link.href}>
+
             <a
               key={link.name}
               href={link.href}
               className="relative text-slate-300 text-sm font-medium transition-all duration-300 hover:text-white hover:scale-110 group"
-            >
+              >
               {link.name}
               <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
+              </NavLink>
           ))}
         </div>
 

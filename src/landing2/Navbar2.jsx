@@ -9,20 +9,20 @@ const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Products', path: '/landing/products', hasDropdown: true, subgroup: ['Course Library', 'Elite Bootcamp', 'Live Sessions'] },
-    { name: 'Platform', path: '/landing/platform', hasDropdown: true, subgroup: ['LMS Interface', 'Mobile App', 'Analytics'] },
-    { name: 'Pricing', path: '/landing/pricing', hasDropdown: false },
-    { name: 'Solutions', path: '/landing/solutions', hasDropdown: true, subgroup: ['For Universities', 'For Corporates', 'For Individuals'] },
-    { name: 'Customers', path: '/landing/customers', hasDropdown: true, subgroup: ['Success Stories', 'Testimonials'] },
-    { name: 'Resources', path: '/landing/resources', hasDropdown: true, subgroup: ['Blog', 'Whitepapers', 'Webinars'] },
-    { name: 'About us', path: '/landing/about', hasDropdown: true, subgroup: ['Our Story', 'Careers', 'Team'] }
+    { name: 'Products', path: '/products', hasDropdown: true, subgroup: ['Course Library', 'Elite Bootcamp', 'Live Sessions'] },
+    { name: 'Platform', path: '/platform', hasDropdown: true, subgroup: ['LMS Interface', 'Mobile App', 'Analytics'] },
+    { name: 'Pricing', path: '/pricing', hasDropdown: false },
+    { name: 'Solutions', path: '/solutions', hasDropdown: true, subgroup: ['For Universities', 'For Corporates', 'For Individuals'] },
+    { name: 'Customers', path: '/customers', hasDropdown: true, subgroup: ['Success Stories', 'Testimonials'] },
+    { name: 'Resources', path: '/resources', hasDropdown: true, subgroup: ['Blog', 'Whitepapers', 'Webinars'] },
+    { name: 'About us', path: '/about', hasDropdown: true, subgroup: ['Our Story', 'Careers', 'Team'] }
   ];
 
   return (
     <>
       <nav className="flex items-center justify-between px-6 md:px-12 py-3 bg-[#FCFBFA] sticky top-0 z-[100] shadow-sm border-b border-gray-100 font-sans">
         {/* Logo */}
-        <Link to="/landing" className="flex items-center gap-2 z-[110]">
+        <Link to="/" className="flex items-center gap-2 z-[110]">
           <img className='h-12 w-auto md:h-15 md:w-40 object-contain' src={imglogo} alt="Logo" />
         </Link>
 

@@ -6,6 +6,9 @@ import Courses2 from './Course2'
 import  Instructor  from './Instructor'
 import  Testimonials  from './Testimonials'
 import Footer2 from './Footer2'
+import StudyMaterials from './StudyMaterials'
+import TutoringSection from './TutoringSection'
+import EliteMentors from './EliteMentors'
 function Landingpage2() {
   return (
     <div>
@@ -13,6 +16,9 @@ function Landingpage2() {
       <Hero2/>
       <Courses2/>
       <Instructor/>
+      <StudyMaterials/>
+      <TutoringSection/>
+      <EliteMentors/>
       <Testimonials/>
       <TrustBanner/>
     </div>
